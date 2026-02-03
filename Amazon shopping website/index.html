@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Amazon - Shop Online for Electronics, Fashion & More</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fab fa-amazon"></i>
+                <span>Apna_Bazar</span>
+            </div>
+
+            <div class="nav-search">
+                <input type="text" class="search-input" placeholder="Search Amazon.com">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="nav-links">
+                <div class="nav-item">
+                    <p>Hello, Sign In</p>
+                    <p><strong>Account & Lists</strong></p>
+                </div>
+                <div class="nav-item orders-nav-item">
+                    <p>Returns</p>
+                    <p><strong>& Orders</strong></p>
+                </div>
+                <div class="nav-item cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                    <p><strong>Cart</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secondary Navbar -->
+        <div class="nav-secondary">
+            <div class="nav-secondary-content">
+                <p class="menu-toggle"><i class="fas fa-bars"></i> Categories</p>
+                <a href="#" class="nav-link">Best Sellers</a>
+                <a href="#" class="nav-link">Today's Deals</a>
+                <a href="#" class="nav-link">Electronics</a>
+                <a href="#" class="nav-link">Fashion</a>
+                <a href="#" class="nav-link">Home & Garden</a>
+                <a href="#" class="nav-link">Sports</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CATEGORY MENU -->
+    <div class="category-menu" id="categoryMenu">
+        <div class="category-header">
+            <h3><i class="fas fa-list"></i> Shop by Category</h3>
+            <button class="close-menu" id="closeMenu"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="category-list">
+            <div class="category-item">
+                <h4><i class="fas fa-laptop"></i> Electronics & Computers</h4>
+                <ul>
+                    <li><a href="#electronics-laptops" class="category-link">Laptops</a></li>
+                    <li><a href="#electronics-phones" class="category-link">Mobile Phones</a></li>
+                    <li><a href="#electronics-headphones" class="category-link">Headphones</a></li>
+                    <li><a href="#electronics-smartwatch" class="category-link">Smartwatches</a></li>
+                    <li><a href="#electronics-tablets" class="category-link">Tablets</a></li>
+                    <li><a href="#electronics-accessories" class="category-link">Tech Accessories</a></li>
+                </ul>
+            </div>
+
+            <div class="category-item">
+                <h4><i class="fas fa-tshirt"></i> Fashion & Apparel</h4>
+                <ul>
+                    <li><a href="#fashion-mens" class="category-link">Men's Clothing</a></li>
+                    <li><a href="#fashion-womens" class="category-link">Women's Clothing</a></li>
+                    <li><a href="#fashion-shoes" class="category-link">Shoes & Sneakers</a></li>
+                    <li><a href="#fashion-accessories" class="category-link">Fashion Accessories</a></li>
+                    <li><a href="#fashion-watches" class="category-link">Watches</a></li>
+                    <li><a href="#fashion-sunglasses" class="category-link">Sunglasses</a></li>
+                </ul>
+            </div>
+
+            <div class="category-item">
+                <h4><i class="fas fa-home"></i> Home & Garden</h4>
+                <ul>
+                    <li><a href="#home-furniture" class="category-link">Furniture</a></li>
+                    <li><a href="#home-kitchen" class="category-link">Kitchen Appliances</a></li>
+                    <li><a href="#home-lighting" class="category-link">Lighting</a></li>
+                    <li><a href="#home-decor" class="category-link">Home Decor</a></li>
+                    <li><a href="#home-bedding" class="category-link">Bedding & Linens</a></li>
+                    <li><a href="#home-garden" class="category-link">Garden Tools</a></li>
+                </ul>
+            </div>
+
+            <div class="category-item">
+                <h4><i class="fas fa-dumbbell"></i> Sports & Outdoors</h4>
+                <ul>
+                    <li><a href="#sports-fitness" class="category-link">Fitness Equipment</a></li>
+                    <li><a href="#sports-camping" class="category-link">Camping & Hiking</a></li>
+                    <li><a href="#sports-cycling" class="category-link">Cycling</a></li>
+                    <li><a href="#sports-water" class="category-link">Water Sports</a></li>
+                    <li><a href="#sports-outdoor" class="category-link">Outdoor Gear</a></li>
+                    <li><a href="#sports-sports" class="category-link">Team Sports</a></li>
+                </ul>
+            </div>
+
+            <div class="category-item">
+                <h4><i class="fas fa-book"></i> Books & Media</h4>
+                <ul>
+                    <li><a href="#media-books" class="category-link">Books</a></li>
+                    <li><a href="#media-ebooks" class="category-link">E-Books</a></li>
+                    <li><a href="#media-audiobooks" class="category-link">Audiobooks</a></li>
+                    <li><a href="#media-movies" class="category-link">Movies & TV</a></li>
+                    <li><a href="#media-music" class="category-link">Music</a></li>
+                    <li><a href="#media-magazines" class="category-link">Magazines</a></li>
+                </ul>
+            </div>
+
+            <div class="category-item">
+                <h4><i class="fas fa-child"></i> Toys & Games</h4>
+                <ul>
+                    <li><a href="#toys-toys" class="category-link">Toys</a></li>
+                    <li><a href="#toys-games" class="category-link">Board Games</a></li>
+                    <li><a href="#toys-video" class="category-link">Video Games</a></li>
+                    <li><a href="#toys-action" class="category-link">Action Figures</a></li>
+                    <li><a href="#toys-puzzles" class="category-link">Puzzles</a></li>
+                    <li><a href="#toys-dolls" class="category-link">Dolls & Accessories</a></li>
+                </ul>
+            </div>
+
+            <div class="category-item">
+                <h4><i class="fas fa-heartbeat"></i> Health & Beauty</h4>
+                <ul>
+                    <li><a href="#health-skincare" class="category-link">Skincare</a></li>
+                    <li><a href="#health-makeup" class="category-link">Makeup</a></li>
+                    <li><a href="#health-haircare" class="category-link">Hair Care</a></li>
+                    <li><a href="#health-vitamins" class="category-link">Vitamins & Supplements</a></li>
+                    <li><a href="#health-personal" class="category-link">Personal Care</a></li>
+                    <li><a href="#health-fragrances" class="category-link">Fragrances</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category Menu Overlay -->
+    <div class="category-overlay" id="categoryOverlay"></div>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="banner-content">
+            <h2>Shop the Best Deals Today!</h2>
+            <p>Exclusive offers on electronics, fashion, home & more</p>
+        </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS SECTION -->
+    <section class="featured-section">
+        <h2 class="section-title">Today's Deals & Promotions</h2>
+        <div class="featured-grid">
+            <!-- Featured Card 1 -->
+            <div class="featured-card">
+                <div class="featured-badge">LIMITED OFFER</div>
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop" alt="Premium Wireless Headphones">
+                <h3>Premium Wireless Headphones</h3>
+                <p class="price">$79.99</p>
+                <p class="original-price"><s>$199.99</s></p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(2,543)</span>
+                </div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <!-- Featured Card 2 -->
+            <div class="featured-card">
+                <div class="featured-badge">HOT DEAL</div>
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop" alt="Smartwatch Pro">
+                <h3>Smartwatch Pro</h3>
+                <p class="price">$199.99</p>
+                <p class="original-price"><s>$399.99</s></p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(1,856)</span>
+                </div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <!-- Featured Card 3 -->
+            <div class="featured-card">
+                <div class="featured-badge">SAVE 50%</div>
+                <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop" alt="Designer Sunglasses">
+                <h3>Designer Sunglasses</h3>
+                <p class="price">$89.99</p>
+                <p class="original-price"><s>$179.99</s></p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(945)</span>
+                </div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <!-- Featured Card 4 -->
+            <div class="featured-card">
+                <div class="featured-badge">BESTSELLER</div>
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop" alt="Portable Speaker">
+                <h3>Portable Bluetooth Speaker</h3>
+                <p class="price">$49.99</p>
+                <p class="original-price"><s>$99.99</s></p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(3,210)</span>
+                </div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="products-section">
+        <h2 class="section-title">Recommended For You</h2>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=300&h=300&fit=crop" alt="Phone Case">
+                </div>
+                <div class="product-info">
+                    <h4>Premium Phone Case</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(456)</span>
+                    </div>
+                    <p class="price">$24.99</p>
+                    <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1609042231439-38e5b79f5fdb?w=300&h=300&fit=crop" alt="USB Cable">
+                </div>
+                <div class="product-info">
+                    <h4>Fast Charging USB Cable</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(892)</span>
+                    </div>
+                    <p class="price">$12.99</p>
+                    <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1572365992253-3cb3e56dd362?w=300&h=300&fit=crop" alt="Laptop Stand">
+                </div>
+                <div class="product-info">
+                    <h4>Adjustable Laptop Stand</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(634)</span>
+                    </div>
+                    <p class="price">$34.99</p>
+                    <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=300&fit=crop" alt="Wireless Mouse">
+                </div>
+                <div class="product-info">
+                    <h4>Wireless Mouse Pro</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(1,123)</span>
+                    </div>
+                    <p class="price">$29.99</p>
+                    <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=300&h=300&fit=crop" alt="Keyboard">
+                </div>
+                <div class="product-info">
+                    <h4>Mechanical Gaming Keyboard</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(2,045)</span>
+                    </div>
+                    <p class="price">$79.99</p>
+                    <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=300&fit=crop" alt="Monitor Light Bar">
+                </div>
+                <div class="product-info">
+                    <h4>Smart Monitor Light Bar</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(567)</span>
+                    </div>
+                    <p class="price">$59.99</p>
+                    <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1572365992253-3cb3e56dd362?w=300&h=300&fit=crop" alt="Webcam">
+                </div>
+                <div class="product-info">
+                    <h4>4K HD Webcam</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(1,789)</span>
+                    </div>
+                    <p class="price">$89.99</p>
+                    <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=300&fit=crop" alt="Phone Stand">
+                </div>
+                <div class="product-info">
+                    <h4>Phone Stand & Holder</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(823)</span>
+                    </div>
+                    <p class="price">$15.99</p>
+                    <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORDERS SECTION MODAL -->
+    <div class="orders-modal" id="ordersModal">
+        <div class="orders-modal-content">
+            <div class="orders-header">
+                <h2><i class="fas fa-box"></i> Your Orders</h2>
+                <button class="close-orders" id="closeOrders"><i class="fas fa-times"></i></button>
+            </div>
+
+            <div class="orders-container">
+                <!-- Empty State -->
+                <div class="orders-empty" id="ordersEmpty">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h3>No Orders Yet</h3>
+                    <p>You haven't placed any orders yet. Start shopping now!</p>
+                </div>
+
+                <!-- Orders List -->
+                <div class="orders-list" id="ordersList" style="display: none;">
+                    <!-- Orders will be dynamically added here -->
+                </div>
+
+                <!-- Order Details View -->
+                <div class="order-details" id="orderDetails" style="display: none;">
+                    <button class="back-to-orders" id="backToOrders"><i class="fas fa-arrow-left"></i> Back to Orders</button>
+                    <div class="order-details-content">
+                        <!-- Order details will be dynamically added here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Orders Modal Overlay -->
+    <div class="orders-overlay" id="ordersOverlay"></div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+            <p>Back to top</p>
+        </div>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Get to Know Us</h4>
+                <ul>
+                    <li><a href="#">About Amazon</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">Amazon Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Connect with Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Make Money with Us</h4>
+                <ul>
+                    <li><a href="#">Sell on Amazon</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                    <li><a href="#">Advertise Your Products</a></li>
+                    <li><a href="#">Amazon Global</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Help & Settings</h4>
+                <ul>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping Rates</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Amazon Clone. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
