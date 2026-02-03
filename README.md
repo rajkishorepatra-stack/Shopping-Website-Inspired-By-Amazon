@@ -77,7 +77,8 @@ Rajkishore Patra
 Frontend Developer
 GitHub: [your-github-profile-link]
 
-
+ADMIN ID- admin
+ADMIN PASSWARD- admin123
 ---
 
 ### 🔥 Want me to:
